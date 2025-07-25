@@ -1,0 +1,87 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 40px;
+}
+.content {
+  flex: 1; /* Este empuja el footer hacia abajo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.actions-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.action-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.action-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.action-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.action-card a {
+  text-decoration: none;
+  color: white;
+  background-color: #4caf50;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+  align-self: center; /* Opcional: centra el botón dentro de la tarjeta */
+}
+
+.action-card a:hover {
+  background-color: #45a049;
+}
+
+footer {
+  background-color: #1c1c1e;
+  color: #fff;
+  text-align: center;
+  padding: 1px;
+  font-size: 0.95rem;
+  width: 100%;
+}

@@ -1,0 +1,18 @@
+{
+    "name": "isaaclugo/programacion_web_ii",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Isaaclugo\\ProgramacionWebIi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "isaac lugo",
+            "email": "isaac.e.lugo.g@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
