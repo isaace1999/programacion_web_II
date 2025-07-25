@@ -84,15 +84,15 @@ $total_donaciones = array_sum(array_column($_SESSION['carrito_donaciones'], 'mon
         <input type="hidden" name="total_donacion" value="<?= $total_donaciones ?>">
         <button type="submit" class="btn btn-success mt-3">Donar ahora</button>
     </form>
+    <?php else: ?>
+        <div class="alert alert-info mt-3">El carrito está vacío.</div>
+    <?php endif; ?>
 
-    <!-- ✅ Botón de acceso al reporte -->
+    <!--Botón SIEMPRE visible -->
     <a href="reporte_donaciones.php" class="btn btn-outline-info mt-3 ms-2">📊 Reporte de donación</a>
 
-<?php else: ?>
-    <div class="alert alert-info mt-3">El carrito está vacío.</div>
-<?php endif; ?>
-
     <a href="../../index.php" class="btn btn-secondary mt-4">Volver al inicio</a>
+
 
 </body>
 </html>
