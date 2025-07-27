@@ -36,6 +36,11 @@ require_once './src/php/control_sesiones.php';
                 <img src="./assets/imagenes/eventos.png" alt="Ver eventos">
                 <a href="./src/php/ver_eventos.php">Ver eventos</a>
             </div>
+            <div class="action-card">
+                <h3>Voluntarios</h3>
+                <img src="./assets/imagenes/voluntarios.png" alt="voluntarios">
+                <a href="./src/php/home_voluntario.php">Voluntarios</a>
+            </div>
         </div>
     </div>
 

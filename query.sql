@@ -28,3 +28,15 @@ CREATE TABLE DONACION (
     FOREIGN KEY (id_donante) REFERENCES DONANTE(id_donante)
 );
 
+CREATE TABLE VOLUNTARIO (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_completo VARCHAR(100) NOT NULL,
+    correo_electronico VARCHAR(100) NOT NULL UNIQUE,
+    telefono VARCHAR(20),
+    direccion TEXT,
+    contrasena VARCHAR(255) NOT NULL,
+    disponibilidad VARCHAR(50),
+    rol VARCHAR(50),
+    id_proyecto INT,
+    FOREIGN KEY (id_proyecto) REFERENCES PROYECTO(id_proyecto)
+);
